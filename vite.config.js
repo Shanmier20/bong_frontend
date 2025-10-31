@@ -8,6 +8,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
    allowedHosts: [
+     "discriminatively-runniest-wendi.ngrok-free.dev",
       "bong-frontend.vercel.app", // ✅ your live Vercel domain
     ],
     proxy: {
