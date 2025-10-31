@@ -7,7 +7,7 @@ const ProductCard = ({ product, onDelete, onEdit }) => {
         <div className="product-card">
             <h4>{product.name}</h4>
             <p className="price">
-                ${parseFloat(product.price).toFixed(2)}
+                ₱{parseFloat(product.price).toFixed(2)}
             </p>
             <p className="description">{product.description}</p>
             <div className="actions">
@@ -27,5 +27,6 @@ const ProductCard = ({ product, onDelete, onEdit }) => {
         </div>
     );
 };
+
 
 export default ProductCard;
