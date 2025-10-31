@@ -1,4 +1,4 @@
-const API_BASE_URL = "/api/products"; // Uses the Vite proxy
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 // GET All Products (Read)
 export const getAllProducts = async () => {
@@ -81,4 +81,5 @@ export const deleteProduct = async (id) => {
         console.error("Error deleting product:", error);
         throw error;
     }
+
 };
