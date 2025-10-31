@@ -1,0 +1,286 @@
+/* src/index.css */
+
+:root {
+    font-family: sans-serif;
+    color-scheme: light dark;
+    color: #333;
+    background-color: #faf1f1de;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.product-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 30px;
+    
+}
+
+/* --- Forms --- */
+.form-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.product-form h3 {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.product-form input[type="text"],
+.product-form input[type="number"],
+.product-form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #333;
+    font-size: medium;
+    background-color: transparent;
+}
+
+.product-form input[type="text"]:focus,
+.product-form input[type="number"]:focus,
+.product-form textarea:focus {
+    padding: 10px;
+    border: none;
+    font-size: medium;
+    border-bottom: 1px solid #2b39f5c2;
+    outline: none;
+    background-color: transparent;
+    color: #333;
+}
+
+/* --- Buttons --- */
+button {
+  position: relative;
+  padding: 12px 15px;
+  border-radius: 7px;
+  border: 1px solid rgb(196, 196, 196);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-top: 12px;
+  margin-left: 12px;
+  background: transparent;
+  color: #615e5e;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.btn-create::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+
+.btn-create:hover {
+  background: rgb(207, 126, 4);
+  box-shadow: 0 0 30px 5px rgba(207, 126, 4);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  color: #fff;
+}
+
+.btn-update::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+.btn-update:hover {
+  background: rgb(207, 126, 4);
+  box-shadow: 0 0 30px 5px rgba(207, 126, 4);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  color: #fff;
+}
+
+.btn-delete::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+.btn-delete:hover {
+  background: rgb(202, 10, 10);
+  box-shadow: 0 0 30px 5px rgba(202, 10, 10);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  color: #fff;
+}
+
+.btn-edit::before {
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  color: #007bff;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+.btn-edit:hover {
+  background: rgb(4, 143, 207);
+  box-shadow: 0 0 30px 5px rgba(4, 143, 207);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  color: #fff;
+}
+
+.btn-cancel::before {
+  content: '';
+  display: block;
+  width: 0px;
+  margin-top: 10px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+.btn-cancel:hover {
+  background: rgb(107, 107, 107);
+  box-shadow: 0 0 30px 5px rgb(107, 107, 107);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  color: #fff;
+}
+
+/* --- Product List --- */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.product-card h4 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+.product-card .price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #28a745;
+    margin: 5px 0;
+}
+
+.product-card .description {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.product-card .actions button:first-child {
+    margin-left: 0;
+}
+
+/* --- Utility --- */
+.loading,
+.error-message {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2em;
+}
+
+.error-message {
+    color: #dc3545;
+    border: 1px solid #dc3545;
+    background-color: #f8d7da;
+    border-radius: 4px;
+}
